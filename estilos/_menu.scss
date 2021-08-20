@@ -1,0 +1,119 @@
+
+//----menu-----
+.divMenu{
+    width: 100%;
+    border: 2px solid transparent;
+}
+.navMenu{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 12vh;
+    .divLogo {
+        width: 90%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        p{
+            font-size: 30px;
+            font-weight: bold;
+            text-decoration: none;
+            color: white;
+            margin: 0;
+            padding: 0;
+            &:hover{
+                color: white !important;
+            }
+        }
+    }
+
+    .divIcoMenu{
+        width: 10%;
+        height: 14vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        #controlA{
+            width: 60%;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px 0px;
+            border-radius: 100%;
+            cursor: pointer;
+            @media (max-width:$breackPoint-7){
+                width: 100% !important;
+            }
+            div {
+                width: 40%;
+                height: 4px;
+                margin: 2px 0px;
+                background-color: white !important;
+                border-radius: 20px;
+            }
+
+            &:hover {
+                .top{
+                    transition: all .2s;
+                    transform: translateY(-50%);
+                }
+                .medium{
+                    transition: all .2s;
+                    transform: translateY(0%);
+                }
+                .bottom{
+                    transition: all .2s;
+                    transform: translateY(50%);
+                }
+            }
+
+        }
+    }
+
+    .padreNav{
+        position: absolute;
+        top: 80px;
+        right: 100px;
+        width: 20%;
+        height: auto;
+        border-radius: 10px;
+        background-color: rgb(255, 255, 255);
+        @media (max-width:$breackPoint-media){
+            width:300px !important;
+            right: 0;
+        }
+        .menu {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            flex-wrap: wrap;
+            div {
+                width: 50%;
+                padding: 20px 0px;
+                text-align: left;
+                display: flex;
+                flex-direction: row;
+                a{
+                    font-size: 20px;
+                    color: $negro;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    ion-icon{
+                        font-size: 18x;
+                        padding: 0px 5px;
+                    }
+                }
+            }
+        }
+    }
+
+}
