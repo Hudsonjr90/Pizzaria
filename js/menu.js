@@ -2,31 +2,33 @@
 
 // Variables
 var divMenu = document.querySelector('.divMenu');
-let estadoM = document.querySelector('.navs')
-estadoM = false
+let estadoM = document.querySelector('.navs');
+estadoM = false;
 
 var padreNav = document.querySelector('.padreNav');
-const botonMenu = document.querySelector('#controlA')
+const botonMenu = document.querySelector('#controlA');
 
 //template menu
 const templateMenu = `
 <div class="menu">
   <div>
-    <a href="#"><ion-icon name="home-outline"></ion-icon>Inicio</a>
+    <a href="#"><ion-icon name="home-outline"></ion-icon>Início</a>
   </div>
   <div>
-    <a href="#menu"><ion-icon name="grid-outline"></ion-icon>Cardápio</a>
+    <a href="#cardápio"><ion-icon name="book-outline"></ion-icon>Cardápio</a>
   </div>
- 
   <div>
-    <a href="#contatos"><ion-icon name="call-outline"></ion-icon>Contato</a>
+    <a href="#História"><ion-icon name="construct-outline"></ion-icon>História</a>
+  </div>
+  <div>
+    <a href="#loja"><ion-icon name="navigate-outline"></ion-icon>Loja</a>
   </div>
   
 </div>
 `;
 
 // Event listeners
-botonMenu.addEventListener('click', abrirMenu )
+botonMenu.addEventListener('click', abrirMenu );
 
 // Clases
 class TemplateM {
@@ -46,12 +48,12 @@ function abrirMenu() {
   const mosMe = new TemplateM();
     switch(estadoM) {
         case false:
-            mosMe.mostrarMenu('abrirMenu')
-            estadoM = true
+            mosMe.mostrarMenu('abrirMenu');
+            estadoM = true;
             break;
         case true:
-            estadoM = false
-            mosMe.mostrarMenu('cerrarMenu')
+            estadoM = false;
+            mosMe.mostrarMenu('cerrarMenu');
         break;
     }
-};
+}
