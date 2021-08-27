@@ -6,8 +6,8 @@ document.write('<script src="./js/loader.js"></script>');
 let btnOrdenar = document.querySelector('#ordernar');
 let seccionOrdenar = document.querySelector('.seccionOrdenar');
 
-let divReservaciones = document.querySelector('.div__reservacion')
-let enviar = document.getElementById('enviar')
+let divReservaciones = document.querySelector('.div__reservacion');
+let enviar = document.getElementById('enviar');
 
 // Estilos----
 var estilos = {
@@ -16,7 +16,7 @@ var estilos = {
     botonQuitar: `<p id="quitar">X</p>`,
     heiOrdenar: '100vh'
 };
-let {error, correcto, botonQuitar, heiOrdenar} = estilos
+let {error, correcto, botonQuitar, heiOrdenar} = estilos;
 
 const templateOrdenar = `
 <div class="padreQui" id="ordenar" >
@@ -59,11 +59,11 @@ class Interfaz {
             errorEmail.style.color = error;
 
         }else {
-            errorEmail.innerHTML = `${mensaje}`
+            errorEmail.innerHTML = `${mensaje}`;
             errorEmail.style.color = correcto;
-        };
-    };
-};
+        }
+    }
+}
 
 // ----Event Listener----
 
@@ -71,8 +71,7 @@ eventListeners();
 
 function eventListeners(){
     btnOrdenar.addEventListener('click', mostrarOrdenar);
-};
-
+}
 // ----Funciones----
 
 //mostrar ordenar
@@ -87,7 +86,7 @@ function mostrarOrdenar() {
 
     let btnQuitar = document.querySelector('#quitar');
     btnQuitar.addEventListener('click', quitarOrdenar);
-};
+}
 
 //validar formulario
 function validarForm() {
@@ -104,8 +103,8 @@ function validarForm() {
             quitarOrdenar();
         },1000);
     }
-};
+}
 
 function quitarOrdenar() {
     seccionOrdenar.innerHTML = '';
-};
+}
