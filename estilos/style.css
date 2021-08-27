@@ -360,10 +360,11 @@ body {
 }
 
 header {
+  
   width: 100%;
-  height: 125vh;
-  background: url(../imagenes/fondo2.jpg);
-  background-size: cover;
+  height: 100vh;
+  background: url(../imagenes/fondo.jpg);
+  background-size:cover;
 }
 
 header .color {
@@ -533,7 +534,7 @@ header .color {
 .seccion2 {
   width: 100%;
   height: auto;
-  background: url(../imagenes/baking-cheese-cooking-crust-315755.jpg);
+  background: url(../imagenes/baked-chef-cook-dough-784632.jpg);
   background-size: 40%;
   background-repeat: no-repeat;
   background-position: 100px 20px;
@@ -636,6 +637,7 @@ header .color {
 
 .seccionPizzas .divP h1 {
   font-weight: bold;
+  color: #114209;
 }
 
 .seccionPizzas .divPizzas {
@@ -766,6 +768,15 @@ header .color {
   background-color: rgba(133, 133, 133, 0.226);
 }
 
+.seccionComent2{
+  width: 100%;
+  height: auto;
+  background-size: 40%;
+  background-repeat: no-repeat;
+  background-position: 100px 20px;
+  background: url(../imagenes/tutti3.png);
+}
+
 @media (max-width: 995px) {
   .seccionComent {
     -webkit-box-pack: center;
@@ -808,10 +819,37 @@ header .color {
 }
 
 .seccionComent .divImg img {
-  width: 80%;
+  width: 50%;
+}
+
+.seccionComent2 .divImg2 img {
+  width: 50%;
+  
+}
+
+.seccionComent3 .divImg3 img {
+  width: 20%;
+}
+.divImg4 img {
+  width: 30%;
 }
 
 .seccionComent .divText {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.seccionComent2 .divText2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -845,15 +883,48 @@ header .color {
           align-items: center;
   text-align: center;
 }
+.seccionComent2 .divText2 div {
+  padding: 10px 0px;
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
 
 .seccionComent .divText div ion-icon {
   font-size: 80px;
+  color: #114209;
+}
+.seccionComent2 .divText2 div ion-icon {
+  font-size: 50px;
   color: #114209;
 }
 
 .seccionComent .divText div p {
   color: #114209;
   font-size: 20px;
+  font-weight: bold;
+}
+.seccionComent2 .divText2 div p {
+  color: #114209;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.seccionComent2 .divText2 div h1 {
+  color: #114209;
+  font-size: 40px;
   font-weight: bold;
 }
 
@@ -1079,7 +1150,7 @@ header .color {
 
 .seccion__reservacion {
   width: 100%;
-  background: url(../imagenes/3123.jpg);
+  background: url(..);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1256,6 +1327,7 @@ footer {
   width: 100%;
   overflow: hidden;
   padding: 1em 0;
+  background: url(../imagenes/fondo2.jpg);
 }
 
 footer .divFooter {
@@ -1287,9 +1359,10 @@ footer .divFooter div {
 }
 
 footer .divFooter div p {
-  color: #114209;
+  color: #ffffff;
   font-weight: bold;
   margin: 0;
+  font-size: 30px;
 }
 
 footer .divFooter div a {
@@ -1299,7 +1372,7 @@ footer .divFooter div a {
 
 footer .divFooter div ion-icon {
   font-size: 25px;
-  color: #114209;
+  color: #ffffff;
 }
 
 footer .divFooter div ion-icon:hover {
