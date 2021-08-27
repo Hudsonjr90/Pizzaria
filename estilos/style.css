@@ -908,7 +908,7 @@ header .color {
 }
 .seccionComent2 .divText2 div ion-icon {
   font-size: 50px;
-  color: #114209;
+  color: #000000;
 }
 
 .seccionComent .divText div p {
@@ -917,13 +917,13 @@ header .color {
   font-weight: bold;
 }
 .seccionComent2 .divText2 div p {
-  color: #114209;
+  color: #000000;
   font-size: 30px;
   font-weight: bold;
 }
 
 .seccionComent2 .divText2 div h1 {
-  color: #114209;
+  color: #000000;
   font-size: 40px;
   font-weight: bold;
 }
