@@ -1,5 +1,5 @@
 # Pizzaria
 
-Landing Page da Pizzaria Pizza & Tutti, para divulgação, e demonstração de cardápio, história e contato final.
+Landing Page da Pizzaria Pizza & Tutti, para divulgação, demonstração de cardápio, história e compra final.
 
 criado com HTML, Javascript, CSS(SCSS)
