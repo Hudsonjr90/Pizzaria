@@ -12,7 +12,7 @@ var botonMenu = document.querySelector('#controlA');
 var templateMenu = `
 <div class="menu">
   <div>
-    <a href="#"><ion-icon name="home-outline"></ion-icon>Início</a>
+    <a href=""><ion-icon name="home-outline"></ion-icon>Início</a>
   </div>
   <div>
     <a href="#cardápio1"><ion-icon name="book-outline"></ion-icon>Pizzas Tradicionais</a>
