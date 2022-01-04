@@ -1350,7 +1350,8 @@ footer {
   width: 100%;
   overflow: hidden;
   padding: 1em 0;
-  background: url(../imagenes/);
+  background-color: #114209;
+  
 }
 
 footer .divFooter {
@@ -1382,7 +1383,7 @@ footer .divFooter div {
 }
 
 footer .divFooter div p {
-  color: #114209;
+  color: #ffffff;
   font-weight: bold;
   margin: 0;
   font-size: 30px;
@@ -1395,12 +1396,12 @@ footer .divFooter div a {
 
 footer .divFooter div ion-icon {
   font-size: 25px;
-  color: #114209;
+  color: #ffffff;
 }
 
 footer .divFooter div ion-icon:hover {
   -webkit-transition: all .2s;
   transition: all .2s;
-  color: #ea2027;
+  color: #114209;
 }
 /*# sourceMappingURL=style.css.map */
