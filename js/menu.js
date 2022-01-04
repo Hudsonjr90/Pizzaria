@@ -15,13 +15,13 @@ var templateMenu = `
     <a href=""><ion-icon name="home-outline"></ion-icon>Início</a>
   </div>
   <div>
-    <a href="#cardápio1"><ion-icon name="book-outline"></ion-icon>Pizzas Tradicionais</a>
+    <a href="#cardápio1"><ion-icon name="book-outline"></ion-icon>Tradicionais</a>
   </div>
   <div>
-    <a href="#cardápio2"><ion-icon name="book-outline"></ion-icon>Pizzas Especiais</a>
+    <a href="#cardápio2"><ion-icon name="book-outline"></ion-icon>Especiais</a>
   </div>
   <div>
-    <a href="#cardápio3"><ion-icon name="book-outline"></ion-icon>Pizzas Doces</a>
+    <a href="#cardápio3"><ion-icon name="book-outline"></ion-icon>Doces</a>
   </div>
   <div>
     <a href="#cardápio4"><ion-icon name="book-outline"></ion-icon>Calzones</a>
