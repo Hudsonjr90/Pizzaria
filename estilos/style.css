@@ -776,7 +776,7 @@ header .color {
   background-size: 40%;
   background-repeat: no-repeat;
   background-position: 100px 20px;
-  background:#dcdcdc;
+  background:#154b0a9f;
 }
 
 @media (max-width: 995px) {
@@ -910,7 +910,7 @@ header .color {
 }
 .seccionComent2 .divText2 div ion-icon {
   font-size: 50px;
-  color: #114209;
+  color: #ffffff;
 }
 
 .seccionComent .divText div p {
@@ -919,13 +919,13 @@ header .color {
   font-weight: bold;
 }
 .seccionComent2 .divText2 div p {
-  color:#114209;
+  color:#ffffff;
   font-size: 22px;
   font-weight: bold;
 }
 
 .seccionComent2 .divText2 div h1 {
-  color: #114209;
+  color: #ffffff;
   font-size: 40px;
   font-weight: bold;
 }
@@ -1131,26 +1131,27 @@ header .color {
           align-items: flex-start;
   padding: 5px 40px;
 }
+
 .buttonClass {
-  font-size:22px;
+  font-size:18px;
   font-family:Arial;
-  width:160px;
-  height:65px;
-  border-width:0px;
-  color:#114209;
-  border-color:#fcfcfc;
+  width:140px;
+  height:50px;
+  border-width:1px;
+  color:#0c4414;
+  border-color:#ffffff;
   font-weight:bold;
-  border-top-left-radius:8px;
-  border-top-right-radius:8px;
-  border-bottom-left-radius:8px;
-  border-bottom-right-radius:8px;
-  box-shadow:inset 0px 1px 0px 0px #ffffff;
-  text-shadow:inset 0px 1px 0px #ffffff;
-  background:linear-gradient(#ffffff, #f6f6f6);
+  border-top-left-radius:15px;
+  border-top-right-radius:15px;
+  border-bottom-left-radius:15px;
+  border-bottom-right-radius:15px;
+  box-shadow: 3px 4px 0px 0px #809681;
+  text-shadow: 0px 1px 0px #e1e2ed;
+  background:linear-gradient(#ededed, #bab1ba);
 }
 
 .buttonClass:hover {
-  background: linear-gradient(#f6f6f6, #ffffff);
+  background: linear-gradient(#bab1ba, #ededed);
 }
 
 .seccionOrdenar .padreQui .divOrdenar div label {
