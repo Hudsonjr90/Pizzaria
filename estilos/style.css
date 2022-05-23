@@ -339,6 +339,14 @@ html {
   scroll-behavior: smooth;
   overflow-x: hidden !important;
 }
+html ::-webkit-scrollbar {
+  width: .5rem;
+  background: #efeef6
+}
+
+html ::-webkit-scrollbar-thumb {
+  background: #114209
+}
 
 * {
   margin: 0;
