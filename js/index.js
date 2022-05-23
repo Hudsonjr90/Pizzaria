@@ -1,110 +1,87 @@
-// uniendo js
-document.write('<script src="./js/menu.js"></script>');
-document.write('<script src="./js/loader.js"></script>');
+// Variables
+var divMenu = document.querySelector('.divMenu');
+var estadoM = document.querySelector('.navs');
+estadoM = false;
 
-// ---Variables----
-var btnOrdenar = document.querySelector('#ordernar');
-var seccionOrdenar = document.querySelector('.seccionOrdenar');
+var padreNav = document.querySelector('.padreNav');
+var botonMenu = document.querySelector('#controlA');
 
-var divReservaciones = document.querySelector('.div__reservacion');
-var enviar = document.getElementById('enviar');
-
-// Estilos----
-var estilos = {
-    error: 'red',
-    correcto: 'green',
-    botonQuitar: `<p id="quitar">X</p>`,
-    heiOrdenar: '100vh'
-};
-var {error, correcto, botonQuitar, heiOrdenar} = estilos;
-
-var templateOrdenar = `
-<div class="padreQui" id="ordenar" >
-    <div class="divQuitar">
-        ${botonQuitar}
-    </div>
-    <div class="divOrdenar" >
-        <h1>
-            Fique Por Dentro
-        </h1>
-        <div>
-            <label for="exampleInputEmail1">Nome</label>
-            <input type="name" class="form-control" id="name" aria-describedby="emailHelp" placeholder="seu nome" >
-            <small id="errorName" class="form-text">
-            </small>
-
-            <label for="">Email</label>
-            <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="seu email" >
-            <small id="errorEmail" class="form-text ">
-            </small>
-        </div>
-        <div>
-            <a class="boton1" id="validForm" href="#ss">
-                Enviar
-            </a>
-        </div>
-    </div>
+//template menu
+var templateMenu = `
+<div class="menu">
+  <div>
+    <a href=""><ion-icon name="home-outline"></ion-icon>Início</a>
+  </div>
+  <div>
+    <a href="#cardápio1"><ion-icon name="book-outline"></ion-icon>Tradicionais</a>
+  </div>
+  <div>
+    <a href="#cardápio2"><ion-icon name="book-outline"></ion-icon>Especiais</a>
+  </div>
+  <div>
+    <a href="#cardápio3"><ion-icon name="book-outline"></ion-icon>Doces</a>
+  </div>
+  <div>
+    <a href="#cardápio4"><ion-icon name="book-outline"></ion-icon>Calzones</a>
+  </div>
+  <div>
+    <a href="#História"><ion-icon name="construct-outline"></ion-icon>História</a>
+  </div>
+  <div>
+    <a href="#loja"><ion-icon name="checkmark-done-outline"></ion-icon>Pedidos</a>
+  </div>
+  
 </div>
 `;
 
-// ----Clases----
+// Event listeners
+botonMenu.addEventListener('click', abrirMenu );
 
-class Interfaz {
-    imprimirMensaje(mensaje, tipo){
+// Clases
+class TemplateM {
+  mostrarMenu(tipo){
+    if(tipo === 'abrirMenu'){
+      padreNav.innerHTML = templateMenu;
+    }
+    if(tipo === 'cerrarMenu'){
+      padreNav.innerHTML = '';
+    }
+  }
+}
+// Function
+
+//abrir menu
+function abrirMenu() {
+  var mosMe = new TemplateM();
+    switch(estadoM) {
+        case false:
+            mosMe.mostrarMenu('abrirMenu');
+            estadoM = true;
+            break;
+        case true:
+            estadoM = false;
+            mosMe.mostrarMenu('cerrarMenu');
+        break;
+    }
+}
+
+window.onload =  load;
+var divCarga = document.querySelector('.divCarga');
+
+var divPizzas = document.querySelector('.divPizzas');
+
+function load () {
+
+    if(window.onload == true) {
+        divCarga.style.top = '0px';
+
+    }if(window.onload == true) {
+        divCarga.style.top = '-100000px';
         
-        var errorEmail = document.querySelector('#errorEmail');
-
-        if(tipo === 'error'){
-            errorEmail.innerHTML = `${mensaje}`;
-            errorEmail.style.color = error;
-
-        }else {
-            errorEmail.innerHTML = `${mensaje}`;
-            errorEmail.style.color = correcto;
-        }
     }
 }
 
-// ----Event Listener----
+setTimeout(function() {
+    divCarga.style.top = '-100000px';
+},3000);
 
-eventListeners();
-
-function eventListeners(){
-    btnOrdenar.addEventListener('click', mostrarOrdenar);
-}
-// ----Funciones----
-
-//mostrar ordenar
-function mostrarOrdenar() {
-    seccionOrdenar.innerHTML = templateOrdenar;
-    seccionOrdenar.style.height = heiOrdenar;
-
-    var btnValidar = document.querySelector('#validForm');
-
-    //event validar form
-    btnValidar.addEventListener('click', validarForm);
-
-    var btnQuitar = document.querySelector('#quitar');
-    btnQuitar.addEventListener('click', quitarOrdenar);
-}
-
-//validar formulario
-function validarForm() {
-    var inputName = document.querySelector('#name').value;
-    var inputEmail = document.querySelector('#email').value;
-
-  var ui = new Interfaz();
-
-    if(inputName == '' || inputEmail == ''){
-        ui.imprimirMensaje('Compvara los campos correctamente', 'error');
-    }else {
-        ui.imprimirMensaje('Compvarado', 'correcto');
-        setTimeout(function(){
-            quitarOrdenar();
-        },1000);
-    }
-}
-
-function quitarOrdenar() {
-    seccionOrdenar.innerHTML = '';
-}
